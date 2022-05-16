@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99 Bottles of Beer</title>
+    <script>
+        var bottles = 99;
+        var phrase1 = " bottles of beer on the wall, ";
+        var phrase2 = " bottles of beer.<br />";
+        var phrase3 = "Take one down and pass it around, ";
+        var phrase4 = " bottles of beer on the wall.<br /><br />";
+        //var verse = bottles + phrase1 + [phrase2] + phrase3;
+        //var lastVerse = bottles + phrase4;
+        while (bottles > 0){
+            var verse = bottles + phrase1 + [phrase2] + phrase3;
+            document.write(verse);
+            console.log(bottles);
+            bottles--;
+            var lastVerse = bottles + phrase4;
+            document.write(lastVerse);
+        }
+        document.write("No more bottles of beer on the wall, no more bottles of beer.<br />Go to the store and buy some more, 99 bottles of beer on the wall.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
